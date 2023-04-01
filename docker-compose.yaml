@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   docx2pdf_converter:
-    build: .
+    image: robounord/docx2pdf:1.00
     volumes:
       - ~/docx2pdf/:/docx2pdf/
     restart: always
