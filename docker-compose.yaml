@@ -4,6 +4,6 @@ services:
   docx2pdf_converter:
     build: .
     volumes:
-      - ~/docx2pdf/docx_files
+      - ~/docx2pdf/:/docx2pdf/
     restart: always
     container_name: unord-docx2pdf

@@ -3,7 +3,7 @@ import docx2pdf
 import time
 
 # set directory path
-directory = "~/docx2pdf"
+directory = "/docx2pdf"
 
 while True:
     # loop through each file in directory
