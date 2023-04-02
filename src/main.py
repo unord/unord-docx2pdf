@@ -21,12 +21,15 @@ while True:
             output_path = os.path.join(directory, f"{os.path.splitext(filename)[0]}.pdf")
 
             # check if PDF already exists
+            print(f"Checking if {output_path} already exists...")
             if os.path.isfile(output_path):
                 print(f"{output_path} already exists. Skipping conversion.")
             else:
                 # check if file has been modified since last conversion
+                print(f"Checking if {input_path} has been modified since last conversion...")
                 if os.path.getmtime(input_path) > last_conversion_time:
                     # create PDF converter command
+                    print(f"Converting {input_path} to {output_path}...")
                     cmd = ["libreoffice", "--headless", "--convert-to", "pdf", "--outdir", directory, input_path]
 
                     # convert docx to pdf using libreoffice
