@@ -1,4 +1,4 @@
-FROM 3.11.2-buster
+FROM python:3.11
 
 # Install libreoffice
 RUN apt-get update && \
