@@ -1,4 +1,8 @@
-FROM python:alpine3.17
+FROM 3.11.2-buster
+
+# Install libreoffice
+RUN apt-get update && \
+    apt-get install -y libreoffice
 
 ENV PYTHONUNBUFFERED=1
 WORKDIR /app
