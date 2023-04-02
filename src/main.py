@@ -3,7 +3,7 @@ import time
 import subprocess
 
 # set directory path
-directory = "/path/to/docx/files"
+directory = "/docx2pdf"
 
 # initialize last conversion time as current time
 last_conversion_time = time.time()
