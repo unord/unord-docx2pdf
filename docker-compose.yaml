@@ -4,6 +4,6 @@ services:
   docx2pdf_converter:
     image: robounord/docx2pdf:1.00
     volumes:
-      - ~/docx2pdf/:/docx2pdf/
+      - /home/robo/docx2pdf/:/docx2pdf/
     restart: always
     container_name: unord-docx2pdf
