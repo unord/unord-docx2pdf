@@ -3,7 +3,7 @@ import time
 import subprocess
 
 # set directory path relative to the script directory
-directory = "/docx_files"
+directory = "/docx2pdf"
 
 while True:
     # loop through each file in directory
