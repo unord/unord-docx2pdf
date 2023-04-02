@@ -10,9 +10,13 @@ last_conversion_time = time.time()
 
 while True:
     # loop through each file in directory
+    print(f"Checking directory for new files...")
     for filename in os.listdir(directory):
+        # check if file is a docx file
+        print(f"Checking {filename}...")
         if filename.endswith(".docx"):
             # create input and output file paths
+            print(f"Found {filename}! Converting to PDF...")
             input_path = os.path.join(directory, filename)
             output_path = os.path.join(directory, f"{os.path.splitext(filename)[0]}.pdf")
 
